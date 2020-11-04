@@ -25,19 +25,21 @@ Une solution peut être de mettre en place une station blanche.
 | Données des fichiers à analyser |  | X |   |  |
 | Résultats d'analyse |  |  | X |  |
 
-Logiciels du produit : Les logiciels du produit (système d’exploitation, application, base de signatures virales, etc.) sont considérés comme des biens sensibles. Ils doivent être protégés en disponibilité, intégrité et authenticité.
+**Logiciels du produit** : Les logiciels du produit (système d’exploitation, application, base de signatures virales, etc.) sont considérés comme des biens sensibles. Ils doivent être protégés en disponibilité, intégrité et authenticité.
 
-Journaux d'évènements : Les évènements de sécurité sont journalisés localement et de façon déportée. Ce bien est à protéger en disponibilité et intégrité. Les journaux doivent être également authentifiés lorsqu’ils sont déportés
+**Journaux d'évènements** : Les évènements de sécurité sont journalisés localement et de façon déportée. Ce bien est à protéger en disponibilité et intégrité. Les journaux doivent être également authentifiés lorsqu’ils sont déportés
 
-Journaux de transfert de fichiers : Les informations liées au transfert de fichier(s) sont journalisées localement et de façon déportée. Ce bien est à protéger en disponibilité et intégrité. Les journaux doivent être également authentifiés lorsqu’ils sont déportés.
+**Journaux de transfert de fichiers** : Les informations liées au transfert de fichier(s) sont journalisées localement et de façon déportée. Ce bien est à protéger en disponibilité et intégrité. Les journaux doivent être également authentifiés lorsqu’ils sont déportés.
 
-Données des fichiers à analyser : Le fichier à analyser doit être protégé en intégrité
+**Données des fichiers à analyser** : Le fichier à analyser doit être protégé en intégrité
 
-Résultat d'analyse : Les données issues de l’analyse du fichier par le produit doivent être protégées en confidentialité.
+**Résultat d'analyse** : Les données issues de l’analyse du fichier par le produit doivent être protégées en confidentialité.
 
 ## Système d'exploitation d'une station blanche
 
 Pas encore déterminé
+
+Le système d'exploitation est chiffré.
 
 ## Menaces à prendre en compte sur une Station Blanche
 
@@ -48,3 +50,7 @@ Les menaces peuvent provenir de différents horizons :
 - Utilisateur non autorisé : accès physique à la station blanche.
 
 - Attaquant avec droits administrateurs : l’attaquant a réussi à compromettre le compte d’un administrateur.
+
+## Fonctions de la station blanche
+
+Pas encore déterminé
