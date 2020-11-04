@@ -17,7 +17,7 @@ Une solution peut être de mettre en place une station blanche.
 
 ## Respect du DICT
 
-| Bien sensibles   | D | I | C | T |
+| Biens sensibles   | D | I | C | T |
 |---|---|---|---|---|
 | Logiciels du produit | X | X |   | X |
 | Journaux d'évènements | X | X |   |  |
