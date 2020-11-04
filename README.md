@@ -54,3 +54,11 @@ Les menaces peuvent provenir de différents horizons :
 ## Fonctions de la station blanche
 
 Pas encore déterminé
+
+## Automatisation de l'installation de la station blanche
+
+Lors de la création et du pentest, il est fréquent que la station blanche devienne compromise. La création d'un image peut alors être intéressant.
+
+## Post création de la station blanche
+
+Il est indispensable de pentester la station blanche.
