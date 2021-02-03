@@ -14,4 +14,4 @@ Et on déplace la commande :
 
 On initie notre VT avec la clé API :
 
-`/usr/bin/vt init`
+`vt init`
