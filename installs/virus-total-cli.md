@@ -11,3 +11,7 @@ On unzip le fichier :
 Et on déplace la commande :
 
 `mv mv vt /usr/bin/`
+
+On initie notre VT avec la clé API :
+
+`/usr/bin/vt init`
