@@ -37,7 +37,7 @@ Une solution peut être de mettre en place une station blanche.
 
 ## Système d'exploitation d'une station blanche
 
-Pas encore déterminé
+Le système d'exploitation choisit est Debian.
 
 Le système d'exploitation est chiffré.
 
