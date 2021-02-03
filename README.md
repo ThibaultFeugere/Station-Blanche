@@ -57,7 +57,13 @@ Pas encore déterminé
 
 ## Automatisation de l'installation de la station blanche
 
+### Création d'une ISO
+
 Lors de la création et du pentest, il est fréquent que la station blanche devienne compromise. La création d'un image peut alors être intéressant.
+
+### Scan régulier de tout l'OS
+
+Grace à une CRON, l'entièreté de l'OS est scannée. 
 
 ## Post création de la station blanche
 
