@@ -42,7 +42,7 @@ Une solution peut être de mettre en place une station blanche.
 
 ### OS
 
-Le système d'exploitation choisit utilise un base Debian. C'est une distribution relativement stable, légère et a fait ses preuves au cours des années. Cela va donc dans le sens de la station blanche qui devra être, potentiellement, réinstallée plusieurs fois.
+Le système d'exploitation choisit est Q4OS qui utilise un base Debian. C'est une distribution relativement stable, légère et a fait ses preuves au cours des années. Cela va donc dans le sens de la station blanche qui devra être, potentiellement, réinstallée plusieurs fois.
 
 De plus, le budget sécurité informatique est souvent très faible. Il faut donc que l'OS tourne sur n'importe quel ordinateur.
 
