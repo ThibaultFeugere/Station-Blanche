@@ -4,6 +4,7 @@
 
 **Station blanche :** Poste de travail isolé du réseau opérationnel dédié à l'analyse des médias amovibles afin de déterminer si elle peut être utilisée sur ledit réseau.  
 
+
 ## Constat
 
 Enormément de piratage passent par les médias amovibles. Les attaquants joue sur un maillon faible, l'humain qui a un défaut : la curiosité.
@@ -14,6 +15,7 @@ La curiosité de l'humain va alors le pousser à brancher la clé usb sur son po
 avant de l'avoir branchée. Si l'antivirus prévient l'utilisateur, il y a de grandes chance pour qu'il accepte le risque. Tout un réseau peut alors être compromis.
 
 Une solution peut être de mettre en place une station blanche.
+
 
 ## Respect du DICT
 
@@ -35,11 +37,25 @@ Une solution peut être de mettre en place une station blanche.
 
 **Résultat d'analyse** : Les données issues de l’analyse du fichier par le produit doivent être protégées en confidentialité.
 
-## Système d'exploitation d'une station blanche
 
-Le système d'exploitation choisit est Debian.
+## Système d'exploitation de station blanche
+
+### OS
+
+Le système d'exploitation choisit utilise un base Debian. C'est une distribution relativement stable, légère et a fait ses preuves au cours des années. Cela va donc dans le sens de la station blanche qui devra être, potentiellement, réinstallée plusieurs fois.
+
+De plus, le budget sécurité informatique est souvent très faible. Il faut donc que l'OS tourne sur n'importe quel ordinateur.
+
+### Configuration minimale requise 
+
+- RAM: 128 MB
+- CPU: 300 MHz 
+- Espace de stockage : 3 Gb
+
+### Chiffrement
 
 Le système d'exploitation est chiffré.
+
 
 ## Menaces à prendre en compte sur une Station Blanche
 
@@ -51,9 +67,11 @@ Les menaces peuvent provenir de différents horizons :
 
 - Attaquant avec droits administrateurs : l’attaquant a réussi à compromettre le compte d’un administrateur.
 
+
 ## Fonctions de la station blanche
 
 Pas encore déterminé
+
 
 ## Automatisation de l'installation de la station blanche
 
@@ -64,6 +82,7 @@ Lors de la création et du pentest, il est fréquent que la station blanche devi
 ### Scan régulier de tout l'OS
 
 Grace à une CRON, l'entièreté de l'OS est scannée. 
+
 
 ## Post création de la station blanche
 
