@@ -80,9 +80,14 @@ Pas encore déterminé
 
 ## Automatisation de l'installation de la station blanche
 
+### Création d'une OVA
+
+Lien vers l'OVA (8Gb) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing
+
 ### Création d'une ISO
 
 Lors de la création et du pentest, il est fréquent que la station blanche devienne compromise. La création d'un image peut alors être intéressant.
+
 
 ### Scan régulier de tout l'OS
 
