@@ -1,3 +1,8 @@
 #!/bin/bash
 
-# add all shell install here
+echo "Installation des outils nécessaires à la station blanche"
+
+for entry in "installs"/*
+do
+        sh $entry
+done

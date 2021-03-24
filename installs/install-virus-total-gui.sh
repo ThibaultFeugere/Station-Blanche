@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # get dependencies
-sudo apt-get install git build-essential qtchooser qt5-default libjansson-dev libcurl4-openssl-dev git zlib1g-dev
+sudo apt-get install -y git build-essential qtchooser qt5-default libjansson-dev libcurl4-openssl-dev git zlib1g-dev
 
 # clone the c-vtapi library
 git clone https://github.com/VirusTotal/c-vtapi.git /home/stationblanche/Téléchargements/c-vtapi
@@ -10,7 +10,7 @@ git clone https://github.com/VirusTotal/c-vtapi.git /home/stationblanche/Téléc
 cd /home/stationblanche/Téléchargements/c-vtapi
 
 # get c-vtapi dependencies
-sudo apt-get install automake autoconf libtool libjansson-dev libcurl4-openssl-dev
+sudo apt-get install -y automake autoconf libtool libjansson-dev libcurl4-openssl-dev
 
 # configure with default options and make
 autoreconf -fi && ./configure && make
