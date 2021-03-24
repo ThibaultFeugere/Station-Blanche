@@ -21,7 +21,7 @@ echo "----------------------------"
 echo "Résultats :"
 cat "$filename"
 
-read -p 'Souhaitez-vous lancer un autre scan ? (Y/n) ' continue
+read -p 'Souhaitez-vous lancer VirusTotal ? (Y/n) ' continue
 
 if [ "$continue" == "Y" ]; then
 	~/Téléchargements/qt-virustotal-uploader/VirusTotalUploader
