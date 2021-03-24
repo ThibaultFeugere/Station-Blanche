@@ -71,7 +71,17 @@ Les menaces peuvent provenir de différents horizons :
 
 ## Fonctions de la station blanche
 
-Pas encore déterminé
+Pour les utilisateurs qui souhaitent utiliser la stationblanche, il suffit de brancher la clé USB à scanner et d'exécuter le fichier `scan.sh`.
+
+Celui-ci va lancer l'outil `ClamAV` et `VirusTotal`
+
+## Mise à jour de la station blanche
+
+Régulièrement, il faut faire des mises à jour du système d'exploitation de la station blanche ainsi que de la base de données de signature de ClamAV. Pour cela il faut la brancher au réseau. L'utilisation d'un pare-feu est donc recommandé.
+
+## Pare-feu
+
+TODO
 
 ## Automatisation de l'installation de la station blanche
 
