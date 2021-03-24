@@ -17,7 +17,7 @@ echo $clamresult > "$filename"
 read -p 'Souhaitez-vous lancer un autre scan ? (Y/n) ' continuer
 
 if [ "$continuer" == "Y" ]; then
-	echo "On continue"
+	/home/stationblanche/Bureau/qt-virustotal-uploader/VirusTotalUploader
 else
 	echo "On stop"
 	exit
