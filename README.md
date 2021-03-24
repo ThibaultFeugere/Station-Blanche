@@ -43,6 +43,8 @@ Le système d'exploitation choisit est Q4OS qui utilise un base Debian. C'est un
 
 De plus, le budget sécurité informatique est souvent très faible. Il faut donc que l'OS tourne sur n'importe quel ordinateur.
 
+Le système d'exploitation a été hardené grâce aux recommandations de l'ANSSI ainsi que l'outil `lynis`.
+
 ### Configuration minimale requise 
 
 - RAM: 128 MB
