@@ -9,9 +9,10 @@ echo " |_____/   |_/_/    \_\_|  |_____\____/|_| \_| |____/|______/_/    \_\_| \
 
 echo "Scan antivirus en cours"
 
+path="/home/stationblanche/Bureau/results"
 now=$(date)
-mkdir -p /home/stationblanche/Bureau/results
-filename="/home/stationblanche/Bureau/results/results-${now}"
+mkdir -p $path
+filename="${path}/results-${now}"
 clamresult=$(clamscan -i -r -z /media/)
 echo $clamresult > "$filename"
 
