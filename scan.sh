@@ -10,23 +10,21 @@ echo " |_____/   |_/_/    \_\_|  |_____\____/|_| \_| |____/|______/_/    \_\_| \
 echo "----------------------------"
 echo "Scan antivirus en cours"
 
-path="/home/stationblanche/Bureau/results"
-now=$(date)
+path="~/Bureau/results"
+now=$(date "+%A-%B-%d-%T-%y")
 mkdir -p $path
-filename="${path}/results-${now}"
+filename="${path}/${now}"
 clamresult=$(clamscan -i -r -z /media/)
 echo $clamresult > "$filename"
 
 echo "----------------------------"
 echo "Résultats :"
 cat "$filename"
-strings "$filename"
 
 read -p 'Souhaitez-vous lancer un autre scan ? (Y/n) ' continue
 
 if [ "$continue" == "Y" ]; then
-	/home/stationblanche/Téléchargements/qt-virustotal-uploader/VirusTotalUploader
+	~/Téléchargements/qt-virustotal-uploader/VirusTotalUploader
 else
-	echo "On stop"
 	exit
 fi
