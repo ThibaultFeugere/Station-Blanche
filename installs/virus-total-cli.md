@@ -2,16 +2,46 @@
 
 ## Installer une Releases
 
-https://github.com/VirusTotal/vt-cli/releases
+https://github.com/VirusTotal/qt-virustotal-uploader
 
-On unzip le fichier :
+Veillez à avoir `git` avant.
 
-`unzip Linux64.zip`
+```shell
+# get dependencies
+sudo apt-get install build-essential qtchooser qt5-default libjansson-dev libcurl4-openssl-dev git zlib1g-dev
 
-Et on déplace la commande :
+# clone the c-vtapi library
+git clone https://github.com/VirusTotal/c-vtapi.git
 
-`mv mv vt /usr/bin/`
+#change to c-vtapi directory
+cd c-vtapi
 
-On initie notre VT avec la clé API :
+# get c-vtapi dependencies
+sudo apt-get install automake autoconf libtool libjansson-dev libcurl4-openssl-dev
 
-`vt init`
+# configure with default options and make
+autoreconf -fi && ./configure && make
+
+# install to system, by default this goes to /usr/local/lib
+sudo make install 
+
+# configure dynamic linker to add /usr/local/lib to path
+sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/usr-local-lib.conf'
+sudo ldconfig
+
+# go back to base directory
+cd ..
+
+#clone QT VirusTotal Uplaoder
+git clone https://github.com/VirusTotal/qt-virustotal-uploader.git
+cd qt-virustotal-uploader
+
+# run qmake, specifing qt5 
+qtchooser -run-tool=qmake -qt=5
+
+# compile with 4 parellel jobs
+make -j4
+
+#optionally install 
+sudo make install
+```
