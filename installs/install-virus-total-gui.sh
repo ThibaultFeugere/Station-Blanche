@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # get dependencies
 sudo apt-get install git build-essential qtchooser qt5-default libjansson-dev libcurl4-openssl-dev git zlib1g-dev
 
