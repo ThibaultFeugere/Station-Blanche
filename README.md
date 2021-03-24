@@ -56,6 +56,7 @@ Le système d'exploitation est chiffré.
 ### Compte utilisateur
 
 Nom d'utilisateur : stationblanche
+
 Mot de passe : stationblanche
 
 ## Menaces à prendre en compte sur une Station Blanche
