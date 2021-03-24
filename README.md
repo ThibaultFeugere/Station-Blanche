@@ -4,7 +4,6 @@
 
 **Station blanche :** Poste de travail isolé du réseau opérationnel dédié à l'analyse des médias amovibles afin de déterminer si elle peut être utilisée sur ledit réseau.  
 
-
 ## Constat
 
 Enormément de piratage passent par les médias amovibles. Les attaquants joue sur un maillon faible, l'humain qui a un défaut : la curiosité.
@@ -15,7 +14,6 @@ La curiosité de l'humain va alors le pousser à brancher la clé usb sur son po
 avant de l'avoir branchée. Si l'antivirus prévient l'utilisateur, il y a de grandes chance pour qu'il accepte le risque. Tout un réseau peut alors être compromis.
 
 Une solution peut être de mettre en place une station blanche.
-
 
 ## Respect du DICT
 
@@ -36,7 +34,6 @@ Une solution peut être de mettre en place une station blanche.
 **Données des fichiers à analyser** : Le fichier à analyser doit être protégé en intégrité
 
 **Résultat d'analyse** : Les données issues de l’analyse du fichier par le produit doivent être protégées en confidentialité.
-
 
 ## Système d'exploitation de station blanche
 
@@ -61,7 +58,6 @@ Le système d'exploitation est chiffré.
 Nom d'utilisateur : stationblanche
 Mot de passe : stationblanche
 
-
 ## Menaces à prendre en compte sur une Station Blanche
 
 Les menaces peuvent provenir de différents horizons :
@@ -72,11 +68,9 @@ Les menaces peuvent provenir de différents horizons :
 
 - Attaquant avec droits administrateurs : l’attaquant a réussi à compromettre le compte d’un administrateur.
 
-
 ## Fonctions de la station blanche
 
 Pas encore déterminé
-
 
 ## Automatisation de l'installation de la station blanche
 
@@ -84,15 +78,15 @@ Pas encore déterminé
 
 Lien vers l'OVA (8Gb) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing
 
+Lien vers l'ISO : (TODO)
+
 ### Création d'une ISO
 
 Lors de la création et du pentest, il est fréquent que la station blanche devienne compromise. La création d'un image peut alors être intéressant.
 
-
 ### Scan régulier de tout l'OS
 
 Grace à une CRON, l'entièreté de l'OS est scannée. 
-
 
 ## Post création de la station blanche
 
