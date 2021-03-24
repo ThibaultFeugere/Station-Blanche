@@ -1,14 +1,5 @@
-#  Installation de Virus Total CLI
-
-## Installer une Releases
-
-https://github.com/VirusTotal/qt-virustotal-uploader
-
-Veillez à avoir `git` avant.
-
-```shell
 # get dependencies
-sudo apt-get install build-essential qtchooser qt5-default libjansson-dev libcurl4-openssl-dev git zlib1g-dev
+sudo apt-get install git build-essential qtchooser qt5-default libjansson-dev libcurl4-openssl-dev git zlib1g-dev
 
 # clone the c-vtapi library
 git clone https://github.com/VirusTotal/c-vtapi.git
@@ -44,4 +35,3 @@ make -j4
 
 #optionally install 
 sudo make install
-```
