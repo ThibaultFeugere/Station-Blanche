@@ -16,10 +16,13 @@ filename="${path}/results-${now}"
 clamresult=$(clamscan -i -r -z /media/)
 echo $clamresult > "$filename"
 
+echo "Résultats :"
+cat $filename
+
 read -p 'Souhaitez-vous lancer un autre scan ? (Y/n) ' continue
 
 if [ "$continue" == "Y" ]; then
-	/home/stationblanche/Bureau/qt-virustotal-uploader/VirusTotalUploader
+	/home/stationblanche/Téléchargements/qt-virustotal-uploader/VirusTotalUploader
 else
 	echo "On stop"
 	exit
