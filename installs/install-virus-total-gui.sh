@@ -2,10 +2,10 @@
 sudo apt-get install git build-essential qtchooser qt5-default libjansson-dev libcurl4-openssl-dev git zlib1g-dev
 
 # clone the c-vtapi library
-git clone https://github.com/VirusTotal/c-vtapi.git
+git clone https://github.com/VirusTotal/c-vtapi.git /home/stationblanche/Bureau
 
 #change to c-vtapi directory
-cd c-vtapi
+cd /home/stationblanche/Bureau/c-vtapi
 
 # get c-vtapi dependencies
 sudo apt-get install automake autoconf libtool libjansson-dev libcurl4-openssl-dev
@@ -24,8 +24,8 @@ sudo ldconfig
 cd ..
 
 #clone QT VirusTotal Uplaoder
-git clone https://github.com/VirusTotal/qt-virustotal-uploader.git
-cd qt-virustotal-uploader
+git clone https://github.com/VirusTotal/qt-virustotal-uploader.git /home/stationblanche/Bureau
+cd /home/stationblanche/Bureau/qt-virustotal-uploader
 
 # run qmake, specifing qt5 
 qtchooser -run-tool=qmake -qt=5
