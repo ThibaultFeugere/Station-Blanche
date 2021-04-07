@@ -85,7 +85,7 @@ Régulièrement, il faut faire des mises à jour du système d'exploitation de l
 
 ## Pare-feu
 
-TODO
+Le pare-feu choisit est UFW. Il est simple d'utilisation et efficace. Ce pare-feu est utile lorsque l'administrateur de la machine va la connecter au réseau pour faire des mises à jour du système d'exploitation, de la base de données des signatures, etc.
 
 ## Automatisation de l'installation de la station blanche
 
@@ -109,8 +109,6 @@ Il est indispensable de pentester la station blanche.
 
 ## Ressources
 
-# Ressources à regarder
-
 - https://askubuntu.com/questions/4508/how-do-i-safely-use-a-virus-infected-usb-drive-in-ubuntu
 
 - https://askubuntu.com/questions/134874/how-to-auto-scan-any-plugged-in-usb-storage-device-with-clamav
@@ -120,3 +118,5 @@ Il est indispensable de pentester la station blanche.
 - https://www.ssi.gouv.fr/guide/recommandations-de-securite-relatives-a-un-systeme-gnulinux/
 
 - https://cisofy.com/lynis/
+
+- https://www.ssi.gouv.fr/guide/profil-de-fonctionnalites-et-de-securite-sas-et-station-blanche-reseaux-non-classifies/
