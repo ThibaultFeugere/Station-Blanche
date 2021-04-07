@@ -4,9 +4,23 @@ L'hardening va se baser sur les recommandations de l'ANSSI : https://www.ssi.gou
 
 Le fichier : [Rapport de l'ANSSI](linux_configuration-fr-v1.2.pdf)
 
+## Outils disponibles pour le gestionnaire de la station blance
+
+### Debsums
+
+Cet outil permet de vérifier la signature MD5 du paquet associé à sa vraie valeur.
+
+Pour l'utiliser : `debsums`.
+
+### Debsecan
+
+
+
 ## Lynis
 
 Lynis est un outil qui permet d'auditer rapidement son système avec la commande `sudo lynis audit system`.
+
+### Avant
 
 Voici le résultat au début :
 
@@ -125,4 +139,12 @@ Voici le résultat au début :
 
   * Harden compilers like restricting access to root user only [HRDN-7222]
       https://cisofy.com/controls/HRDN-7222/
+```
+
+### Après
+
+Voici le résultat à la fin :
+
+```txt
+TODO
 ```
