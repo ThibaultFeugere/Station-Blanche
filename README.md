@@ -87,6 +87,13 @@ Régulièrement, il faut faire des mises à jour du système d'exploitation de l
 
 Le pare-feu choisit est UFW. Il est simple d'utilisation et efficace. Ce pare-feu est utile lorsque l'administrateur de la machine va la connecter au réseau pour faire des mises à jour du système d'exploitation, de la base de données des signatures, etc.
 
+Sont autorisés :
+- DNS
+- HTTP / HTTPS
+- Git
+
+Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var/log/ufw.log`
+
 ## Automatisation de l'installation de la station blanche
 
 ### Création d'une OVA
