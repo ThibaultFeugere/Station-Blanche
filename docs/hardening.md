@@ -14,7 +14,44 @@ Pour l'utiliser : `debsums`.
 
 ### Debsecan
 
+Cet outil permet de lister les CVE associés aux outils que la station blanche possède.
 
+Pour l'utiliser : `debsecan --suite buster --format detail`.
+
+Pour obtenir seulement ceux qui possèdent un fix : `debsecan --suite buster --only-fixed`.
+
+Résultat :
+
+```
+CVE-2020-27170 linux-headers-4.19.0-14-amd64 (fixed)
+CVE-2020-27171 linux-headers-4.19.0-14-amd64 (fixed)
+CVE-2021-26930 linux-headers-4.19.0-14-amd64 (fixed)
+...
+```
+
+Pour fixer les paquets : `apt install $(debsecan --suite buster --only-fixed --format packages)`
+
+### Needrestart
+
+Cet outil permet de définir si le redemarrage d'un daemon ou la machine est nécessaire. Il s'exécute automatiquement lorsque c'est nécessaire.
+
+Cependant, nous pouvons forcer son exécution via la commande : `sudo needrestart`.
+
+Résultat :
+
+```
+root@q4os-desktop:~# sudo needrestart
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+```
 
 ## Lynis
 
