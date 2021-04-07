@@ -45,6 +45,8 @@ De plus, le budget sécurité informatique est souvent très faible. Il faut don
 
 Le système d'exploitation a été hardené grâce aux recommandations de l'ANSSI ainsi que l'outil `lynis`.
 
+La langue de la station blanche est le français afin qu'elle soit compréhensible par tous.
+
 ### Configuration minimale requise 
 
 - RAM: 128 MB
