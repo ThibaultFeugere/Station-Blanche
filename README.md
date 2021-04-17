@@ -35,15 +35,25 @@ Une solution peut être de mettre en place une station blanche.
 
 **Résultat d'analyse** : Les données issues de l’analyse du fichier par le produit doivent être protégées en confidentialité.
 
+## Menaces à prendre en compte sur une Station Blanche
+
+Les menaces peuvent provenir de différents horizons :
+
+- Utilisateur légitime : insertion d'un média compromis ou réalisation d'une erreur de manipulation.
+
+- Utilisateur non autorisé : accès physique à la station blanche.
+
+- Attaquant avec droits administrateurs : l’attaquant a réussi à compromettre le compte d’un administrateur.
+
 ## Système d'exploitation de station blanche
 
 ### OS
 
-Le système d'exploitation choisit est Q4OS qui utilise un base Debian. C'est une distribution relativement stable, légère et a fait ses preuves au cours des années. Cela va donc dans le sens de la station blanche qui devra être, potentiellement, réinstallée plusieurs fois.
+Le système d'exploitation choisit est Q4OS qui utilise un base Debian. C'est une distribution relativement stable, légère et qui a fait ses preuves au cours des années. Cela va donc dans le sens de la station blanche qui devra être, potentiellement, réinstallée plusieurs fois.
 
 De plus, le budget sécurité informatique est souvent très faible. Il faut donc que l'OS tourne sur n'importe quel ordinateur.
 
-Le système d'exploitation a été hardené grâce aux recommandations de l'ANSSI ainsi que l'outil `lynis`.
+Le système d'exploitation a été durcît ([hardening](./docs/hardening.md)) grâce aux recommandations de l'ANSSI ainsi que l'outil `lynis`.
 
 La langue de la station blanche est le français afin qu'elle soit compréhensible par tous.
 
@@ -55,29 +65,23 @@ La langue de la station blanche est le français afin qu'elle soit compréhensib
 
 ### Chiffrement
 
-Le système d'exploitation est chiffré.
+Le système d'exploitation est chiffré. TODO : Rajouter l'algorithme de chiffrement.
 
 ### Compte utilisateur
 
-Nom d'utilisateur : stationblanche
+Pour la preuve de concept, l'identifiant et le mot de passe sont simples. Dans une utilisation en entreprise, il est conseillé de changer ce mot de passe et mettre une politique de changement de mots de passe. L'ANSSI recommande de changer tous les 90 jours.
 
-Mot de passe : stationblanche
+Le mot de passe de l'utilisateur `root` est uniquement connu du gestionnaire de la station blanche et le changement fréquent du mot de passe est aussi conseillé.
 
-## Menaces à prendre en compte sur une Station Blanche
+Nom d'utilisateur : `statioblanche`
 
-Les menaces peuvent provenir de différents horizons :
-
-- Utilisateur légitime : insertion d'un média compromis ou réalisation d'une erreur de manipulation.
-
-- Utilisateur non autorisé : accès physique à la station blanche.
-
-- Attaquant avec droits administrateurs : l’attaquant a réussi à compromettre le compte d’un administrateur.
+Mot de passe : `statioblanche`
 
 ## Fonctions de la station blanche
 
-Pour les utilisateurs qui souhaitent utiliser la stationblanche, il suffit de brancher la clé USB à scanner et d'exécuter le fichier `scan.sh`.
+Pour les utilisateurs qui souhaitent utiliser la station blanche, il suffit de brancher la clé USB à scanner et d'exécuter le fichier `scan.sh`.
 
-Celui-ci va lancer l'outil `ClamAV` et `VirusTotal`
+Celui-ci va lancer l'outil `ClamAV` et `VirusTotal`. Les détails des arguments utilisés avec l'outil `Clamav` par le script `scan.sh` sont [disponibles ici](./docs/clamav.md).
 
 ## Mise à jour de la station blanche
 
@@ -92,7 +96,7 @@ Sont autorisés :
 - HTTP / HTTPS
 - Git
 
-Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var/log/ufw.log`
+Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var/log/ufw.log`.
 
 ## Automatisation de l'installation de la station blanche
 
@@ -100,15 +104,17 @@ Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var
 
 Lien vers l'OVA (8Gb) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing
 
-Lien vers l'ISO : (TODO)
-
 ### Création d'une ISO
 
 Lors de la création et du pentest, il est fréquent que la station blanche devienne compromise. La création d'un image peut alors être intéressant.
 
+Lien vers l'ISO : (TODO)
+
 ### Scan régulier de tout l'OS
 
-Grace à une CRON, l'entièreté de l'OS est scannée. 
+Grace à une CRON, l'entièreté de l'OS est scannée.
+
+TODO : Ajouter la ligne qui execute la CRON
 
 ## Post création de la station blanche
 
