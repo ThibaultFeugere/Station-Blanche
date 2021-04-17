@@ -126,6 +126,12 @@ Pour les personnes qui ne souhaiteraient pas utiliser l'image ou le fichier ova 
 
 Si un outil ne vous intéresse pas, vous pouvez le supprimer du répertoire.
 
+Pour vérifier le bon fonctionnement de la station blanche, vous trouverez le fichier de test antimalware Eicar. Il est inoffenssif mais permet de lever des alertes.
+
+Voici le résultat de ce fichier sur VirusTotal par exemple :
+
+![](./images/virustotal-eicar.png)
+
 ## Ressources
 
 - https://askubuntu.com/questions/4508/how-do-i-safely-use-a-virus-infected-usb-drive-in-ubuntu
