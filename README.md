@@ -120,6 +120,12 @@ TODO : Ajouter la ligne qui execute la CRON
 
 Il est indispensable de pentester la station blanche.
 
+## Facultatif
+
+Pour les personnes qui ne souhaiteraient pas utiliser l'image ou le fichier ova mais qui voudrait utiliser certains outils ou exécuter le script sur une autre machine, il vous suffit de cloner se repository et d'exécuter en administrateur le script `install-all.sh`. Celui-ci va venir exécuter tous les scripts qui se trouvent dans le répertoire `installs`.
+
+Si un outil ne vous intéresse pas, vous pouvez le supprimer du répertoire.
+
 ## Ressources
 
 - https://askubuntu.com/questions/4508/how-do-i-safely-use-a-virus-infected-usb-drive-in-ubuntu
