@@ -94,6 +94,8 @@ Le pare-feu choisit est UFW. Il est simple d'utilisation et efficace. Ce pare-fe
 Sont autorisés :
 - DNS
 - HTTP / HTTPS
+
+Facultatif (non recommandé en production) :
 - Git
 
 Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var/log/ufw.log`.
