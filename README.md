@@ -114,11 +114,9 @@ Lien vers l'ISO : (TODO)
 
 ### Scan régulier de tout l'OS
 
-Grace à une CRON, l'entièreté de l'OS est scannée toutes les semaines, ce qui prend dans une crontable la forme : `0 0 * * 0`.
+Grace à une CRON, l'entièreté de l'OS est scannée toutes les semaines. La ligne de commande est stockée dans `/etc/cron.weekly/`.
 
 Le scan de tout l'OS est effectué avec l'outil `ClamAV` : `clamscan -i -r -z / > /root/global-scan-$(date "+%A-%B-%d-%T-%y").txt` et est uniquement accessible pour l'administrateur.
-
-La ligne dans la crontab est donc représentée par : `0 0 * * 0 clamscan -i -r -z / > /root/global-scan-$(date "+%A-%B-%d-%T-%y").txt`.
 
 ## Post création de la station blanche
 
