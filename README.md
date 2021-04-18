@@ -104,7 +104,7 @@ Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var
 
 ### Création d'une OVA
 
-Lien vers l'OVA (8Gb) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing
+Lien vers l'OVA (8Gb) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing TODO : Remettre une version plus récente de l'OVA.
 
 ### Création d'une ISO
 
@@ -114,9 +114,11 @@ Lien vers l'ISO : (TODO)
 
 ### Scan régulier de tout l'OS
 
-Grace à une CRON, l'entièreté de l'OS est scannée.
+Grace à une CRON, l'entièreté de l'OS est scannée toutes les semaines, ce qui prend dans une crontable la forme : `0 0 * * 0`.
 
 Le scan de tout l'OS est effectué avec l'outil `ClamAV` : `clamscan -i -r -z / > /root/global-scan-$(date "+%A-%B-%d-%T-%y").txt` et est uniquement accessible pour l'administrateur.
+
+La ligne dans la crontab est donc représentée par : `0 0 * * 0 clamscan -i -r -z / > /root/global-scan-$(date "+%A-%B-%d-%T-%y").txt`.
 
 ## Post création de la station blanche
 
