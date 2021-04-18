@@ -116,7 +116,7 @@ Lien vers l'ISO : (TODO)
 
 Grace à une CRON, l'entièreté de l'OS est scannée.
 
-TODO : Ajouter la ligne qui execute la CRON
+Le scan de tout l'OS est effectué avec l'outil `ClamAV` : `clamscan -i -r -z / > /root/global-scan-$(date "+%A-%B-%d-%T-%y").txt` et est uniquement accessible pour l'administrateur.
 
 ## Post création de la station blanche
 
