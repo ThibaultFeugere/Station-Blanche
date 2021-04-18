@@ -31,6 +31,14 @@ CVE-2021-26930 linux-headers-4.19.0-14-amd64 (fixed)
 
 Pour fixer les paquets : `apt install $(debsecan --suite buster --only-fixed --format packages)`
 
+### Apt-listbugs
+
+`apt-listbugs` est un utilitaire qui se lance automatiquement à l'installation d'un nouveau paquet, et va chercher les rapports de bug (s'ils existent). En cas de bug, il vous prévient et vous demande si vous souhaitez installer, annuler ou figer le paquet en question..
+
+### Apt-listchanges
+
+(Pas fonctionnel pour l'instant)
+
 ### Needrestart
 
 Cet outil permet de définir si le redemarrage d'un daemon ou la machine est nécessaire. Il s'exécute automatiquement lorsque c'est nécessaire.
