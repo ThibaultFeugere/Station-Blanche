@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# get dependencies
-sudo apt-get install -y git build-essential qtchooser qt5-default libjansson-dev libcurl4-openssl-dev git zlib1g-dev
-
 # clone the c-vtapi library
 git clone https://github.com/VirusTotal/c-vtapi.git /home/stationblanche/Téléchargements/c-vtapi
 

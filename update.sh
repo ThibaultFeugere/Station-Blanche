@@ -1,9 +1,16 @@
 #!/bin/bash
 
 echo "Mise à jour du système en cours"
-sudo apt update && sudo apt-upgrade -y
+apt update && sudo apt-upgrade -y
+
+echo "Installation des paquets fixés"
+debsecan --suite buster --only-fixed
+apt install $(debsecan --suite buster --only-fixed --format packages)
 
 echo "Arrêt du service ClamAV"
-sudo systemctl stop clamav-freshclam.service
+systemctl stop clamav-freshclam.service
 echo "Mise à jour de la base de données de signatures ClamAV"
 fresclam
+
+echo "Audit du système avec Lynis"
+sudo lynis audit system
