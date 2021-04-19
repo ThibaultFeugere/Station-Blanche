@@ -86,7 +86,7 @@ La langue de la station blanche est le français afin qu'elle soit compréhensib
 
 ### Chiffrement
 
-Le système d'exploitation est chiffré. TODO : Rajouter l'algorithme de chiffrement.
+Le système d'exploitation est chiffré.
 
 ### Compte utilisateur
 
@@ -122,13 +122,11 @@ Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var
 
 ### Création d'une OVA
 
-Lien vers l'OVA (8Gb) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing TODO : Remettre une version plus récente de l'OVA.
+Lien vers l'OVA (8Gb) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing
 
 ### Création d'une ISO
 
 Lors de la création et du pentest, il est fréquent que la station blanche devienne compromise. La création d'un image peut alors être intéressant.
-
-Lien vers l'ISO : (TODO)
 
 ### Scan régulier de tout l'OS
 
