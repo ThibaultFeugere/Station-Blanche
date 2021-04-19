@@ -10,7 +10,7 @@ echo " |_____/   |_/_/    \_\_|  |_____\____/|_| \_| |____/|______/_/    \_\_| \
 echo "----------------------------"
 echo "Scan antivirus en cours"
 
-path="~/Bureau/results"
+path="/home/stationblanche/Bureau/results"
 now=$(date "+%A-%B-%d-%T-%y")
 mkdir -p $path
 filename="${path}/${now}"
