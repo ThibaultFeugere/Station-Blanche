@@ -41,7 +41,7 @@ Pour fixer les paquets : `apt install $(debsecan --suite buster --only-fixed --f
 
 ### Needrestart
 
-Cet outil permet de définir si le redemarrage d'un daemon ou la machine est nécessaire. Il s'exécute automatiquement lorsque c'est nécessaire.
+Cet outil permet de définir si le redemarrage d'un daemon ou de la machine est nécessaire. Il s'exécute automatiquement lorsque c'est nécessaire.
 
 Cependant, nous pouvons forcer son exécution via la commande : `sudo needrestart`.
 

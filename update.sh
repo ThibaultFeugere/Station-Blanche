@@ -10,7 +10,7 @@ apt install $(debsecan --suite buster --only-fixed --format packages)
 echo "Arrêt du service ClamAV"
 systemctl stop clamav-freshclam.service
 echo "Mise à jour de la base de données de signatures ClamAV"
-fresclam
+freshclam
 
 echo "Audit du système avec Lynis"
 lynis audit system
