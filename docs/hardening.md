@@ -24,6 +24,16 @@ Cet outil permet de vérifier la signature MD5 du paquet associé à sa vraie va
 
 Pour l'utiliser : `debsums`.
 
+Résultat : 
+
+```txt
+/usr/share/man/man1/b2sum.1.gz                                                OK
+/usr/share/man/man1/base32.1.gz                                               OK
+/usr/share/man/man1/base64.1.gz                                               OK
+/usr/share/man/man1/basename.1.gz                                             OK
+...
+```
+
 ### Debsecan
 
 Cet outil permet de lister les CVE associés aux outils que la station blanche possède.
@@ -41,7 +51,7 @@ CVE-2021-26930 linux-headers-4.19.0-14-amd64 (fixed)
 ...
 ```
 
-Pour fixer les paquets : `apt install $(debsecan --suite buster --only-fixed --format packages)`
+Pour fixer les paquets : `apt install $(debsecan --suite buster --only-fixed --format packages)`.
 
 ### Needrestart
 
