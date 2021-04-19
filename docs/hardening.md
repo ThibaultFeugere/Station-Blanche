@@ -70,22 +70,21 @@ Lynis est un outil qui permet d'auditer rapidement son système avec la commande
 Voici le résultat au début :
 
 ```txt
--[ Lynis 2.6.2 Results ]-
+-[ Lynis 3.0.3 Results ]-
 
-  Warnings (2):
+  Warnings (3):
   ----------------------------
   ! grpck binary found errors in one or more group files [AUTH-9216]
-      https://cisofy.com/controls/AUTH-9216/
+      https://cisofy.com/lynis/controls/AUTH-9216/
 
-  ! No password set for single mode [AUTH-9308]
-      https://cisofy.com/controls/AUTH-9308/
+  ! No AIDE database was found, needed for AIDE functionality [FINT-4316]
+      https://cisofy.com/lynis/controls/FINT-4316/
 
-  Suggestions (34):
+  Suggestions (35):
   ----------------------------
-  * This release is more than 4 months old. Consider upgrading [LYNIS]
-      https://cisofy.com/controls/LYNIS/
+  * Set a password on GRUB boot loader to prevent altering boot configuration (e.g. boot in single user mode without password) [BOOT-5122]
+      https://cisofy.com/lynis/controls/BOOT-5122/
 
-  * Install libpam-tmpdir to set $TMP and $TMPDIR for PAM sessions [CUST-0280]
-      https://your-domain.example.org/controls/CUST-0280/
+
 ...
 ```
