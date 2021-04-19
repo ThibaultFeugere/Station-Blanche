@@ -13,4 +13,4 @@ echo "Mise à jour de la base de données de signatures ClamAV"
 fresclam
 
 echo "Audit du système avec Lynis"
-sudo lynis audit system
+lynis audit system

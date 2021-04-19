@@ -140,6 +140,14 @@ Le scan de tout l'OS est effectué avec l'outil `ClamAV` : `clamscan -i -r -z / 
 
 Il est indispensable de pentester la station blanche.
 
+## Maintien de la station blanche à jour
+
+Même si nous nous efforçons à diminuer les surfaces d'attaques de la station blanche à un instant donné, celle-ci verra ses vulnérabilités augmenter avec le temps. De ce fait, il faut la mettre à jour de temps en temps. Pour cela, il y a le script `update.sh`.
+
+Ce script a pour mission de mettre à jour la station blanche, de scanner les paquets qui possèdent des failles de sécurité et d'installer la version corrigée si elle existe. De même, nous mettons à jour la base de signatures de ClamAV et nous exécutons à nouveau `lynis` pour vérifier que l'état de la machine ne se dégrade pas.
+
+`update.sh` est à exécute en tant qu'administrateur et il faudra lui fournir un accès internet exceptionnelement le temps de faire les mises à jour.
+
 ## Aboutissement du projet
 
 Il est acceptable de dire que le projet est à un stade suffisant pour être deployé en entreprise. Cependant, il est encore nécessaire d'effectuer de l'hardening, même si c'est un chantier en constante évolution.
