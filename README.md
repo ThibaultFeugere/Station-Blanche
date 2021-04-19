@@ -1,5 +1,32 @@
 # Station Blanche
 
+Lien du projet (pour la version PDF) : [https://gitlab.com/thibaultfeugere/station-blanche](https://gitlab.com/thibaultfeugere/station-blanche)
+
+## Objectif
+
+Après quelques mois d'alternance en sécurité informatique, je me rends compte que les failles humaines sont plus difficiles à remédier que les failles techniques. Malgré la mise en place de nombreuses mesures basées sur le principe de Pareto, certaines surfaces d'attaques subsistent telle que l'attaque par média amovible.
+
+J'ai entendu plusieurs fois parler de station blanche (aussi appelé station de désinfection) sans jamais approfondir le sujet.
+
+De ce fait, la mise en place de ma première station blanche pendant le laboratoire de cybersécurité d'Ynov, lors des Ydays, me semblait appropriée.
+
+## Feuille de route
+
+1. Définir ce qu'est une station blanche, faire des recherches sur internet, lire le rapport de l'ANSSI
+2. Faire des recherches sur des antivirus gratuits et open source si possible
+3. Choisir un système d'exploitation
+4. Mettre en place du durcissement (hardening)
+5. Rédaction de la documentation
+6. Prise de recul sur les choses à améliorer
+
+## Problèmes rencontrés
+
+Le projet s'étant déroulé sur 5 mois, il y a eu plusieurs petits problèmes qui ont été résolus sans trop de difficultés.
+
+Le plus gros problème auquel j'ai dû faire face était le manque de contenu sur internet. Finalement, il n'y a pas beaucoup de projets similaires sur internet ou, du moins, il n'y a pas beaucoup de projets open source. Les rares stations blanches sont des produits finis et payants comme [Kub Cleaner](https://www.kub-cleaner.com/en/) par exemple. J'ai donc seulement regardé les fonctionnalités proposées.
+
+Les zones de flou ont donc été sujettes à mon interprétation.
+
 ## Définitions 
 
 **Station blanche :** Poste de travail isolé du réseau opérationnel dédié à l'analyse des médias amovibles afin de déterminer si elle peut être utilisée sur ledit réseau.  
@@ -17,14 +44,6 @@ Une solution peut être de mettre en place une station blanche.
 
 ## Respect du DICT
 
-| Biens sensibles   | D | I | C | T |
-|---|---|---|---|---|
-| Logiciels du produit | X | X |   | X |
-| Journaux d'évènements | X | X |   |  |
-| Journaux de transfert de fichiers | X | X |   | X |
-| Données des fichiers à analyser |  | X |   |  |
-| Résultats d'analyse |  |  | X |  |
-
 **Logiciels du produit** : Les logiciels du produit (système d’exploitation, application, base de signatures virales, etc.) sont considérés comme des biens sensibles. Ils doivent être protégés en disponibilité, intégrité et authenticité.
 
 **Journaux d'évènements** : Les évènements de sécurité sont journalisés localement et de façon déportée. Ce bien est à protéger en disponibilité et intégrité. Les journaux doivent être également authentifiés lorsqu’ils sont déportés
@@ -34,6 +53,8 @@ Une solution peut être de mettre en place une station blanche.
 **Données des fichiers à analyser** : Le fichier à analyser doit être protégé en intégrité
 
 **Résultat d'analyse** : Les données issues de l’analyse du fichier par le produit doivent être protégées en confidentialité.
+
+Source : [rapport de l'ANSSI](./docs/linux_configuration-fr-v1.2.pdf).
 
 ## Menaces à prendre en compte sur une Station Blanche
 
@@ -121,6 +142,14 @@ Le scan de tout l'OS est effectué avec l'outil `ClamAV` : `clamscan -i -r -z / 
 ## Post création de la station blanche
 
 Il est indispensable de pentester la station blanche.
+
+## Aboutissement du projet
+
+Il est acceptable de dire que le projet est à un stade suffisant pour être deployé en entreprise. Cependant, il est encore nécessaire d'effectuer de l'hardening, même si c'est un chantier en constante évolution.
+
+Les scripts ne sont pas facilement utilisables pour tous les utilisateurs, or l'objectif de la station blanche est quelle soit accessible. Si la solution n'est pas facilement utilisable, alors les utilisateurs ne passeront pas par cette étape pouvant mettre tout ou partie des postes d'un réseau en danger et par conséquent l'entreprise.
+
+Le repertoire Docs contenant la documentation des outils à utiliser devrait être exhaustif. Actuellement, l'administrateur devra utiliser les scripts fournis ou faire ses propres recherches.
 
 ## Facultatif
 
