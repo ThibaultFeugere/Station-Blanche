@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Mise à jour du système en cours"
-apt update && sudo apt-upgrade -y
+apt update && sudo apt upgrade
 
 echo "Installation des paquets fixés"
 debsecan --suite buster --only-fixed
