@@ -53,6 +53,22 @@ CVE-2021-26930 linux-headers-4.19.0-14-amd64 (fixed)
 
 Pour fixer les paquets : `apt install $(debsecan --suite buster --only-fixed --format packages)`.
 
+### Debian-goodies
+
+`Debian-goodies` est un ensemble de petits utilitaires avec notamment `checkrestart` qui permet de voir les processus ou programmes qui ont besoin de redémarrer.
+
+```
+sudo checkrestart
+Found 2 processes using old versions of upgraded files
+(2 distinct programs)
+(2 distinct packages)
+These processes (2) do not seem to have an associated init script to restart them:
+pulseaudio:
+        2282    /usr/bin/pulseaudio
+kmix-trinity:
+        2653    /opt/trinity/bin/kmix
+```
+
 ### Needrestart
 
 Cet outil permet de définir si le redemarrage d'un daemon ou de la machine est nécessaire. Il s'exécute automatiquement lorsque c'est nécessaire.
