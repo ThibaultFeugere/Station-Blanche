@@ -6,6 +6,18 @@ Le fichier : [Rapport de l'ANSSI](linux_configuration-fr-v1.2.pdf)
 
 ## Outils disponibles pour le gestionnaire de la station blance
 
+### Apt-listbugs
+
+`apt-listbugs` est un utilitaire qui se lance automatiquement à l'installation d'un nouveau paquet, et va chercher les rapports de bug (s'ils existent). En cas de bug, il vous prévient et vous demande si vous souhaitez installer, annuler ou figer le paquet en question..
+
+### Apt-listchanges
+
+(Pas fonctionnel pour l'instant)
+
+## ClamAV
+
+ClamAV est un antivirus avec une base de données. Les commandes de base sont expliquées dans [./clamav.md](./clamav.md).
+
 ### Debsums
 
 Cet outil permet de vérifier la signature MD5 du paquet associé à sa vraie valeur.
@@ -31,14 +43,6 @@ CVE-2021-26930 linux-headers-4.19.0-14-amd64 (fixed)
 
 Pour fixer les paquets : `apt install $(debsecan --suite buster --only-fixed --format packages)`
 
-### Apt-listbugs
-
-`apt-listbugs` est un utilitaire qui se lance automatiquement à l'installation d'un nouveau paquet, et va chercher les rapports de bug (s'ils existent). En cas de bug, il vous prévient et vous demande si vous souhaitez installer, annuler ou figer le paquet en question..
-
-### Apt-listchanges
-
-(Pas fonctionnel pour l'instant)
-
 ### Needrestart
 
 Cet outil permet de définir si le redemarrage d'un daemon ou de la machine est nécessaire. Il s'exécute automatiquement lorsque c'est nécessaire.
@@ -60,6 +64,10 @@ No containers need to be restarted.
 
 No user sessions are running outdated binaries.
 ```
+
+Le résultat en version graphique ressemble à ça : 
+
+![](../images/needrestart.jpg)
 
 ## Lynis
 
