@@ -116,9 +116,6 @@ Sont autorisés :
 - DNS
 - HTTP / HTTPS
 
-Facultatif (non recommandé en production) :
-- Git
-
 Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var/log/ufw.log`.
 
 ## Automatisation de l'installation de la station blanche
