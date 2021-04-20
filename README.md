@@ -82,7 +82,7 @@ La langue de la station blanche est le français afin qu'elle soit compréhensib
 
 - RAM: 128 MB
 - CPU: 300 MHz 
-- Espace de stockage : 3 Gb
+- Espace de stockage : 3 GB
 
 ### Chiffrement
 
@@ -122,7 +122,7 @@ Le firewall est configuré afin de stocker des logs qui sont stockés dans `/var
 
 ### Création d'une OVA
 
-Lien vers l'OVA (8Gb) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing
+Lien vers l'OVA (8GB) : https://drive.google.com/file/d/1Ge5rGOlfr10B0fTT5qmDuAExrGmnSKzv/view?usp=sharing
 
 ### Création d'une ISO
 
