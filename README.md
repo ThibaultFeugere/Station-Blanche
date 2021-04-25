@@ -33,7 +33,7 @@ Les zones de flou ont donc été sujettes à mon interprétation.
 
 ## Constat
 
-Enormément de piratage passent par les médias amovibles. Les attaquants joue sur un maillon faible, l'humain qui a un défaut : la curiosité.
+Enormément de piratage passent par les médias amovibles. Les attaquants jouent sur un maillon faible, l'humain qui a un défaut : la curiosité.
 
 Il est très simple de laisser une clé usb infectée par terre, en plein milieu d'un couloir ou devant les bureaux d'une entreprise que vous ciblez.
 
