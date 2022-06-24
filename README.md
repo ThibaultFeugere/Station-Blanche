@@ -2,7 +2,7 @@
 
 Lien du projet [pour la version PDF](https://github.com/ThibaultFeugere/Station-Blanche/blob/master/thibault_feugere_labo_secu_informatique_2020-2021.pdf).
 
-Lien de l'article sur Safecode : [Station blanche pour se protéger des médias amovibles](https://safecode.fr/creer-station-blanche-proteger-medias-amovibles/)
+Lien de l'article sur Safecode : [Station blanche pour se protéger des médias amovibles](https://safecode.fr/creer-station-blanche-proteger-medias-amovibles/).
 
 ## Objectif
 
