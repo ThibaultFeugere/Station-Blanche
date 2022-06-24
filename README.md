@@ -1,6 +1,6 @@
 # Station Blanche
 
-Lien du projet (pour la version PDF) : [https://gitlab.com/thibaultfeugere/station-blanche](https://gitlab.com/thibaultfeugere/station-blanche)
+Lien du projet (pour la version PDF) : [https://github.com/ThibaultFeugere/Station-Blanche/blob/master/thibault_feugere_labo_secu_informatique_2020-2021.pdf)
 
 ## Objectif
 
