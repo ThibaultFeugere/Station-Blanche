@@ -96,9 +96,9 @@ Pour la preuve de concept, l'identifiant et le mot de passe sont simples. Dans u
 
 Le mot de passe de l'utilisateur `root` est uniquement connu du gestionnaire de la station blanche et le changement fréquent du mot de passe est aussi conseillé.
 
-Nom d'utilisateur : `statioblanche`
+Nom d'utilisateur : `stationblanche`
 
-Mot de passe : `statioblanche`
+Mot de passe : `stationblanche`
 
 ## Fonctions de la station blanche
 
